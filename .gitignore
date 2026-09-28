@@ -1,6 +1,7 @@
-books/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
 build/
-extra_imgs/
-nn/
-**.pyd
-**.c
+dist/
+*.egg-info/
