@@ -1,0 +1,26 @@
+[project]
+name = "pixelate"
+version = "0.2.0"
+description = "Turn images into pixel art using the Pixelated Image Abstraction algorithm (Gerstner et al. 2012)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pillow>=10.0",
+]
+
+[project.scripts]
+pixelate = "pixelate.cli:main"
+
+[project.gui-scripts]
+pixelate-gui = "pixelate.gui:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pixelate"]
