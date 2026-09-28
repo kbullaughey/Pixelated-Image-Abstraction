@@ -25,6 +25,13 @@ uv sync                  # creates .venv with the pixelate command
 uv run pixelate --help
 ```
 
+To put `pixelate` (and `pixelate-gui`) on your PATH globally:
+
+```sh
+uv tool install .              # snapshot of the current code
+uv tool install --editable .   # or: always run the code in this checkout
+```
+
 Or with pip: `pip install .`, which installs the `pixelate` and `pixelate-gui` commands.
 
 ## Command line
